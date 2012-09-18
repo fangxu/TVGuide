@@ -185,17 +185,25 @@ namespace TVGuide
             {
                 lv = new ListViewItem(new string[] { item.Time.ToShortTimeString(), 
                     item.Title,item.Detail });
-                if (item.IsPassed)
+                if (currentWeek == (int)(DateTime.Now.DayOfWeek - 1))
                 {
-                    lv.BackColor = Color.Gray;
+                    if (item.IsPassed)
+                    {
+                        lv.BackColor = Color.LightGray;
+                    }
+                    if (lastIsPassed && !item.IsPassed)
+                    {
+                        listView1.Items[i - 1].BackColor = Color.LightSeaGreen;
+                    }
+
+                    lastIsPassed = item.IsPassed;
+                    i++;
                 }
-                if (lastIsPassed && !item.IsPassed)
+                else if (currentWeek < (int)(DateTime.Now.DayOfWeek - 1))
                 {
-                    listView1.Items[i - 1].BackColor = Color.LightSeaGreen;
+                    lv.BackColor = Color.LightGray;
                 }
                 listView1.Items.Add(lv);
-                lastIsPassed = item.IsPassed;
-                i++;
             }
             listView1.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
             listView1.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
