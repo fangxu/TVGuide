@@ -34,17 +34,6 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonUpdate = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeaderTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderDetail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -53,8 +42,19 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonUpdate = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeaderTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDetail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -64,10 +64,10 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -103,8 +103,8 @@
             // 
             // toolStripContainer2.TopToolStripPanel
             // 
-            this.toolStripContainer2.TopToolStripPanel.Controls.Add(this.toolStrip1);
             this.toolStripContainer2.TopToolStripPanel.Controls.Add(this.toolStrip2);
+            this.toolStripContainer2.TopToolStripPanel.Controls.Add(this.toolStrip1);
             // 
             // splitContainer2
             // 
@@ -144,115 +144,6 @@
             this.listBox2.Size = new System.Drawing.Size(201, 339);
             this.listBox2.TabIndex = 0;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            // 
-            // toolStrip2
-            // 
-            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonUpdate,
-            this.toolStripSeparator1,
-            this.toolStripButton8,
-            this.toolStripButton9,
-            this.toolStripButton10,
-            this.toolStripSeparator2,
-            this.toolStripButton12});
-            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(351, 25);
-            this.toolStrip2.Stretch = true;
-            this.toolStrip2.TabIndex = 1;
-            // 
-            // toolStripButtonUpdate
-            // 
-            this.toolStripButtonUpdate.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButtonUpdate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonUpdate.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonUpdate.Image")));
-            this.toolStripButtonUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonUpdate.Name = "toolStripButtonUpdate";
-            this.toolStripButtonUpdate.Size = new System.Drawing.Size(36, 22);
-            this.toolStripButtonUpdate.Text = "更新";
-            this.toolStripButtonUpdate.Click += new System.EventHandler(this.ToolStripUpdate_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButton8
-            // 
-            this.toolStripButton8.BackColor = System.Drawing.Color.LightBlue;
-            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(36, 22);
-            this.toolStripButton8.Text = "央视";
-            this.toolStripButton8.Click += new System.EventHandler(this.ToolStripKind_Click);
-            // 
-            // toolStripButton9
-            // 
-            this.toolStripButton9.BackColor = System.Drawing.Color.LightBlue;
-            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(36, 22);
-            this.toolStripButton9.Text = "卫视";
-            this.toolStripButton9.Click += new System.EventHandler(this.ToolStripKind_Click);
-            // 
-            // toolStripButton10
-            // 
-            this.toolStripButton10.BackColor = System.Drawing.Color.LightBlue;
-            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
-            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(48, 22);
-            this.toolStripButton10.Text = "地方台";
-            this.toolStripButton10.Click += new System.EventHandler(this.ToolStripKind_Click);
-            // 
-            // toolStripContainer1
-            // 
-            // 
-            // toolStripContainer1.ContentPanel
-            // 
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.listView1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(355, 389);
-            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(355, 389);
-            this.toolStripContainer1.TabIndex = 0;
-            this.toolStripContainer1.Text = "toolStripContainer1";
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderTime,
-            this.columnHeaderTitle,
-            this.columnHeaderDetail});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.ShowItemToolTips = true;
-            this.listView1.Size = new System.Drawing.Size(355, 389);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeaderTime
-            // 
-            this.columnHeaderTime.Text = "时间";
-            // 
-            // columnHeaderTitle
-            // 
-            this.columnHeaderTitle.Text = "节目";
-            // 
-            // columnHeaderDetail
-            // 
-            this.columnHeaderDetail.Text = "介绍";
-            this.columnHeaderDetail.Width = 160;
             // 
             // toolStrip1
             // 
@@ -348,6 +239,72 @@
             this.toolStripButton7.Text = "星期日";
             this.toolStripButton7.Click += new System.EventHandler(this.ToolStripWeek_Click);
             // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonUpdate,
+            this.toolStripSeparator1,
+            this.toolStripButton8,
+            this.toolStripButton9,
+            this.toolStripButton10,
+            this.toolStripSeparator2,
+            this.toolStripButton12});
+            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(351, 25);
+            this.toolStrip2.Stretch = true;
+            this.toolStrip2.TabIndex = 1;
+            // 
+            // toolStripButtonUpdate
+            // 
+            this.toolStripButtonUpdate.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripButtonUpdate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonUpdate.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonUpdate.Image")));
+            this.toolStripButtonUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonUpdate.Name = "toolStripButtonUpdate";
+            this.toolStripButtonUpdate.Size = new System.Drawing.Size(36, 22);
+            this.toolStripButtonUpdate.Text = "更新";
+            this.toolStripButtonUpdate.Click += new System.EventHandler(this.ToolStripUpdate_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton8
+            // 
+            this.toolStripButton8.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
+            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton8.Name = "toolStripButton8";
+            this.toolStripButton8.Size = new System.Drawing.Size(36, 22);
+            this.toolStripButton8.Text = "央视";
+            this.toolStripButton8.Click += new System.EventHandler(this.ToolStripKind_Click);
+            // 
+            // toolStripButton9
+            // 
+            this.toolStripButton9.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
+            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton9.Name = "toolStripButton9";
+            this.toolStripButton9.Size = new System.Drawing.Size(36, 22);
+            this.toolStripButton9.Text = "卫视";
+            this.toolStripButton9.Click += new System.EventHandler(this.ToolStripKind_Click);
+            // 
+            // toolStripButton10
+            // 
+            this.toolStripButton10.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
+            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton10.Name = "toolStripButton10";
+            this.toolStripButton10.Size = new System.Drawing.Size(48, 22);
+            this.toolStripButton10.Text = "地方台";
+            this.toolStripButton10.Click += new System.EventHandler(this.ToolStripKind_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
@@ -363,6 +320,49 @@
             this.toolStripButton12.Text = "关于";
             this.toolStripButton12.Click += new System.EventHandler(this.toolStripButton12_Click);
             // 
+            // toolStripContainer1
+            // 
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.listView1);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(355, 364);
+            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.Size = new System.Drawing.Size(355, 389);
+            this.toolStripContainer1.TabIndex = 0;
+            this.toolStripContainer1.Text = "toolStripContainer1";
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderTime,
+            this.columnHeaderTitle,
+            this.columnHeaderDetail});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.FullRowSelect = true;
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.ShowItemToolTips = true;
+            this.listView1.Size = new System.Drawing.Size(355, 364);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeaderTime
+            // 
+            this.columnHeaderTime.Text = "时间";
+            // 
+            // columnHeaderTitle
+            // 
+            this.columnHeaderTitle.Text = "节目";
+            // 
+            // columnHeaderDetail
+            // 
+            this.columnHeaderDetail.Text = "介绍";
+            this.columnHeaderDetail.Width = 160;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -371,7 +371,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "TVGuide";
+            this.Text = "TV Guide";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
@@ -383,13 +383,13 @@
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             this.splitContainer2.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }

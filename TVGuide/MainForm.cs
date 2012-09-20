@@ -279,6 +279,12 @@ namespace TVGuide
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            if (listBox2.SelectedIndex < 0)
+            {
+                MessageBox.Show("请先选择电视台", "注意",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             int i = weekToInt(sender.ToString());
             if (i == currentWeek)
             {

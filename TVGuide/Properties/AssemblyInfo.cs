@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("TVGuide")]
+[assembly: AssemblyTitle("TV Guide")]
 [assembly: AssemblyDescription("全国电视节目查询软件")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("wuyuans.com")]
